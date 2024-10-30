@@ -73,7 +73,7 @@ namespace RazorPagesPizza.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [StringLength(100, Errormesssage = "The {0} must be at least {2} ant at max {1} characters long.",MinimumLength = 1)]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} ant at max {1} characters long.",MinimumLength = 1)]
             [Display(Name = "First name")]
             public string FirstName {get; set; }
 
