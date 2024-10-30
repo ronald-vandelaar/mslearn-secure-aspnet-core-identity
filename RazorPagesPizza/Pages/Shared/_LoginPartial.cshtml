@@ -7,7 +7,7 @@
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
-    RazorPagesPizzaUser? user =  await UserManager.GetUserAsync(user);
+    RazorPagesPizzaUser? user =  await UserManager.GetUserAsync(User);
     var fullname = $"{user?.FirstName} {user?.LastName}";
 
     <li class="nav-item">
