@@ -13,7 +13,7 @@ builder.Services.AddDefaultIdentity<RazorPagesPizzaUser>(options => options.Sign
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddTransient<IEmailSender, EmailSender();
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 
